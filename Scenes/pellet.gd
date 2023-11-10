@@ -6,8 +6,8 @@ signal pellet_eaten(should_allow_eating_ghosts: bool)
 
 @export var should_allow_eating_ghosts = false
 
-func _ready():
-	add_to_group("Pellets")
+#func _ready():
+#	add_to_group("Pellets")
 
 
 func _on_body_entered(body):

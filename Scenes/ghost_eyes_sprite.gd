@@ -1,5 +1,4 @@
 extends Sprite2D
-
 class_name EyesSprite
 
 @export_group("Eye Textures")

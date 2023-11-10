@@ -73,7 +73,6 @@ _data = {
 
 [node name="GhostPlayer" type="Area2D"]
 collision_layer = 16
-collision_mask = 3
 script = ExtResource("1_ub2gl")
 
 [node name="BodySprite" type="Sprite2D" parent="."]

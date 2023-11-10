@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b4n74a85g45qf"]
 
 [ext_resource type="FontFile" uid="uid://ccnln6n4c0g54" path="res://Assets/Fonts/upheavtt.ttf" id="1_6qfat"]
-[ext_resource type="Script" path="res://Scripts/Menu Functionalities/backtoMenu.gd" id="1_ecb38"]
+[ext_resource type="Script" path="res://Scenes/Menu Functionalities/backtoMenu.gd" id="1_ecb38"]
 
 [node name="ghostSelectionScreen" type="Node2D"]
 script = ExtResource("1_ecb38")

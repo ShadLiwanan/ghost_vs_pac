@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ckey7w2klv1dr"]
 
-[ext_resource type="Script" path="res://Scripts/Menu Functionalities/toSelection.gd" id="1_pcy1d"]
+[ext_resource type="Script" path="res://Scenes/Menu Functionalities/toSelection.gd" id="1_pcy1d"]
 [ext_resource type="FontFile" uid="uid://ccnln6n4c0g54" path="res://Assets/Fonts/upheavtt.ttf" id="1_tqtmc"]
 
 [node name="ghostsDescription" type="Node2D"]

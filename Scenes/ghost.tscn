@@ -76,6 +76,7 @@ _data = {
 
 [node name="Ghost" type="Area2D"]
 collision_layer = 16
+collision_mask = 3
 script = ExtResource("1_427c3")
 
 [node name="BodySprite" type="Sprite2D" parent="."]

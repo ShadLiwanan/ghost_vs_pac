@@ -37,7 +37,7 @@ var target_pellet: Pellet = null
 
 
 func _ready():
-	set_physics_process(true)
+	
 	shape_query.shape = collision_shape_2d.shape
 	shape_query.collision_mask = 2
 	ui.set_lifes(lifes)

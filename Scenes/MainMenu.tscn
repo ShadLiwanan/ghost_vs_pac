@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://c0elqsjp3ecps"]
 
 [ext_resource type="Texture2D" uid="uid://dpf2yst4oct61" path="res://Assets/Main Menu Assets/TITLE LOGO.PNG" id="1_hf00o"]
-[ext_resource type="Script" path="res://Scripts/Menu Functionalities/mainMenufunctions.gd" id="1_u3cc7"]
+[ext_resource type="Script" path="res://Scenes/mainMenufunctions.gd" id="1_u3cc7"]
 [ext_resource type="Texture2D" uid="uid://b0pxluouqr03e" path="res://Assets/Main Menu Assets/Start.PNG" id="2_4oq5x"]
 [ext_resource type="FontFile" uid="uid://ccnln6n4c0g54" path="res://Assets/Fonts/upheavtt.ttf" id="2_fh5rq"]
 [ext_resource type="Texture2D" uid="uid://rh6isf4ld4gh" path="res://Assets/Main Menu Assets/Instructions.PNG" id="3_60lc8"]
@@ -64,3 +64,4 @@ stretch_mode = 3
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Instructions" to="." method="_on_instructions_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
