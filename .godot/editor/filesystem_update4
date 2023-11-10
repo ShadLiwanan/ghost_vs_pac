@@ -1,0 +1,17 @@
+res://Scenes/main.tscn
+res://Resources/movement_targets.gd
+res://Resources/yellow_movement_targets.tres
+res://Resources/pink_movement_targets.tres
+res://Resources/blue_movement_targets.tres
+res://Scenes/pacman.tscn
+res://Scenes/pellet.tscn
+res://Scenes/large_pellet.tscn
+res://Scenes/connector.tscn
+res://Scenes/ui.tscn
+res://Scenes/ghost.tscn
+res://Scenes/ghost_player.tscn
+res://Scenes/ghostController.gd
+res://Scenes/ghost_body_sprite.gd
+res://Scenes/ghost_eyes_sprite.gd
+res://Scenes/ghost.gd
+res://Scenes/tilemap.gd

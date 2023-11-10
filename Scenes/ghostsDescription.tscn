@@ -1,0 +1,63 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckey7w2klv1dr"]
+
+[ext_resource type="Script" path="res://Scripts/Menu Functionalities/toSelection.gd" id="1_pcy1d"]
+[ext_resource type="FontFile" uid="uid://ccnln6n4c0g54" path="res://Assets/Fonts/upheavtt.ttf" id="1_tqtmc"]
+
+[node name="ghostsDescription" type="Node2D"]
+script = ExtResource("1_pcy1d")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 1153.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(0.988235, 0.796078, 0.0588235, 1)
+theme_override_fonts/font = ExtResource("1_tqtmc")
+theme_override_font_sizes/font_size = 70
+text = "Ghosts"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 5.0
+offset_top = 89.0
+offset_right = 1158.0
+offset_bottom = 573.0
+theme_override_colors/font_color = Color(0.988235, 0.796078, 0.0588235, 1)
+theme_override_fonts/font = ExtResource("1_tqtmc")
+theme_override_font_sizes/font_size = 27
+text = "Inky the Bashful
+The most unpredictable of all ghosts. At random times, Inky will
+change direction, so pay attention and think fast!
+
+Blinky the Shadow
+The Speedy of the Ghosts. The more Pacman eats pellets, the speedier
+Speedy gets
+
+Pinky the Speedy
+Pinky is the most stickler out of the ghosts, only following a
+certain path and making catching Pacman difficult. Be strategic with
+this ghost.
+
+Clyde the Pokey
+The cowardly of the Ghosts. Clyde will flee from Pacman when he is near him.
+If your up for a challenge, play Clyde!"
+
+[node name="Back" type="Button" parent="."]
+offset_left = 10.0
+offset_top = 573.0
+offset_right = 165.0
+offset_bottom = 635.0
+theme_override_colors/font_color = Color(0.988235, 0.796078, 0.0588235, 1)
+theme_override_fonts/font = ExtResource("1_tqtmc")
+theme_override_font_sizes/font_size = 60
+text = "BACK"
+
+[node name="Next" type="Button" parent="."]
+offset_left = 986.0
+offset_top = 573.0
+offset_right = 1127.0
+offset_bottom = 630.0
+theme_override_colors/font_color = Color(0.988235, 0.796078, 0.0588235, 1)
+theme_override_fonts/font = ExtResource("1_tqtmc")
+theme_override_font_sizes/font_size = 60
+text = "NEXT"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]
