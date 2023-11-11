@@ -42,7 +42,6 @@ text = "1 UP"
 unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("2_k22mm")
-text = "SCORE: 0"
 
 [node name="CenterContainer" type="CenterContainer" parent="MarginContainer"]
 visible = false
@@ -69,5 +68,5 @@ offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_k22mm")
-text = "Game won!"
+text = "Game lost!"
 vertical_alignment = 1

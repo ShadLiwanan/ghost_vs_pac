@@ -42,12 +42,11 @@ var is_blinking = false
 @onready var points_label = $PointsLabel
 
 func _ready():
-	body_entered.connect(_on_body_entered)
+#	body_entered.connect(_on_body_entered)
 	
 #	run_away_timer.run_away_timeout.connect("timeout", self, "_on_run_away_timer_timeout")
 	setup()
-	
-#	at_home_timer.timeout.connect(scatter)
+	at_home_timer.timeout.connect(scatter)
 	
 	navigation_agent_2d.path_desired_distance = 4.0
 	navigation_agent_2d.target_desired_distance = 4.0
@@ -94,28 +93,29 @@ func setup():
 	body_sprite.move()
 	if is_starting_at_home:
 		start_at_home()
-#	else:
-#		scatter()
+	else:
+		scatter()
 
 func start_at_home():
 	current_state = GhostState.STARTING_AT_HOME
 	at_home_timer.start()
 	navigation_agent_2d.target_position = movement_targets.at_home_targets[current_at_home_index].position
 
-#func scatter():
-#	scatter_timer.start()
-#	current_state = GhostState.SCATTER
-#	navigation_agent_2d.target_position = movement_targets.scatter_targets[current_scatter_index].position
+func scatter():
+	scatter_timer.start()
+	current_state = GhostState.SCATTER
+	navigation_agent_2d.target_position = movement_targets.scatter_targets[current_scatter_index].position
 
 
 func on_position_reached():
-
-#	if current_state == GhostState.CHASE:
-#		chase_position_reached()
-	if current_state == GhostState.RUN_AWAY:
+	if current_state == GhostState.SCATTER:
+		scatter_position_reached()
+	if current_state == GhostState.CHASE:
+		chase_position_reached()
+	elif current_state == GhostState.RUN_AWAY:
 		run_away_from_pacman()
-#	elif current_state == GhostState.EATEN:
-#		start_chasing_pacman_after_being_eaten()
+	elif current_state == GhostState.EATEN:
+		start_chasing_pacman_after_being_eaten()
 	elif current_state == GhostState.STARTING_AT_HOME:
 		move_to_next_home_position()
 
@@ -127,34 +127,34 @@ func move_to_next_home_position():
 func chase_position_reached():
 	print("KILL PACMAN")
 
-#func scatter_position_reached():
-#	print(current_scatter_index)
-#	if current_scatter_index < 3:
-#		current_scatter_index += 1
-#	else:
-#		current_scatter_index = 0
-#	print(current_scatter_index)
-#
-#	navigation_agent_2d.target_position = movement_targets.scatter_targets[current_scatter_index].position
+func scatter_position_reached():
+	print(current_scatter_index)
+	if current_scatter_index < 3:
+		current_scatter_index += 1
+	else:
+		current_scatter_index = 0
+	print(current_scatter_index)
 
-#func _on_scatter_timer_timeout():
-#	start_chasing_pacman()
+	navigation_agent_2d.target_position = movement_targets.scatter_targets[current_scatter_index].position
 
-#func start_chasing_pacman():
-#	if chasing_target == null:
-#		print("NO CHASING TARGET. CHASING WILL NOT WORK!!!")
-#	current_state = GhostState.CHASE
-#	update_chasing_target_position_timer.start()
-#	navigation_agent_2d.target_position = chasing_target.position
+func _on_scatter_timer_timeout():
+	start_chasing_pacman()
+
+func start_chasing_pacman():
+	if chasing_target == null:
+		print("NO CHASING TARGET. CHASING WILL NOT WORK!!!")
+	current_state = GhostState.CHASE
+	update_chasing_target_position_timer.start()
+	navigation_agent_2d.target_position = chasing_target.position
 
 
-#func _on_update_chasing_target_position_timer_timeout():
-#	navigation_agent_2d.target_position = chasing_target.position
-#
-#func start_chasing_pacman_after_being_eaten():
-#	start_chasing_pacman()
-#	body_sprite.show()
-#	body_sprite.move()
+func _on_update_chasing_target_position_timer_timeout():
+	navigation_agent_2d.target_position = chasing_target.position
+
+func start_chasing_pacman_after_being_eaten():
+	start_chasing_pacman()
+	body_sprite.show()
+	body_sprite.move()
 
 func run_away_from_pacman():
 	if run_away_timer.is_stopped():
@@ -180,7 +180,7 @@ func _on_run_away_timer_timeout():
 	is_blinking = false
 	eyes_sprite.show_eyes()
 	body_sprite.move()
-#	start_chasing_pacman()
+	start_chasing_pacman()
 
 func get_eaten():
 	ghost_eaten_sound_player.play()
@@ -210,7 +210,7 @@ func _on_body_entered(body):
 				update_chasing_target_position_timer.stop()
 				player.die()
 				scatter_timer.wait_time = 600
-				print("Haha")
+				
 	if body.has_method("get_cell") and body.has_method("world_to_map"):
 		var tilemap = body
 		var map_position = tilemap.world_to_map(global_position)

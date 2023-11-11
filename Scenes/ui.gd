@@ -17,7 +17,7 @@ func set_score(score):
 	game_score_label.text = "SCORE: %d" % score
 
 func game_lost():
-	game_label.text = "Game lost"
+	game_label.text = "Game won"
 	center_container.show()
 
 func game_won():

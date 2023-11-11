@@ -1,0 +1,17 @@
+res://Resources/blue_movement_targets.tres::fc5e29a49ec093e67a980a9c2e7aa884::1699654843::res://.godot/exported/133200997/export-69587590e2e50533896775d7bf2bc241-blue_movement_targets.res
+res://Resources/pink_movement_targets.tres::b650d005066dcd5101c769453f5e6fe9::1699654843::res://.godot/exported/133200997/export-632b326ecd692e957a9d5e7f01c50a51-pink_movement_targets.res
+res://Resources/red_movement_targets.tres::c798afc2f2f8b3f85d116cc6d247b71d::1699656215::res://.godot/exported/133200997/export-42e58494154eee5c6bf7a7b82550308a-red_movement_targets.res
+res://Resources/yellow_movement_targets.tres::7980dc133a9f0c6421da16b7e837080e::1699654843::res://.godot/exported/133200997/export-6211d2b0072032bfd6793b958aa391c8-yellow_movement_targets.res
+res://Scenes/connector.tscn::3a8a578a0c04bd0881ab762779587e74::1699657077::res://.godot/exported/133200997/export-e1363f3ab0b41fd96f0814186f35e2c4-connector.scn
+res://Scenes/ghost.tscn::64152b1a4e265381d878a9149d076bf1::1699657212::res://.godot/exported/133200997/export-6a99f35563fecd8e1c7bb67110cbf436-ghost.scn
+res://Scenes/ghostsDescription.tscn::12c56ed7a09f72d3e3e8eb6867de37bd::1699657077::res://.godot/exported/133200997/export-6064597644e741f432b9bad50d08187b-ghostsDescription.scn
+res://Scenes/ghostSelectionScreen.tscn::1b1653fd66c1a162225b7adcdaf21e69::1699657077::res://.godot/exported/133200997/export-7f8cefc99527189198957fda3a14983f-ghostSelectionScreen.scn
+res://Scenes/ghost_player.tscn::d4f3a8f75423eb5e8e55f7e433dde455::1699657077::res://.godot/exported/133200997/export-29a231a22c9858f54c1e3d8d22c76420-ghost_player.scn
+res://Scenes/instructionsScreen.tscn::9e3ad095c98673e47b36013427044931::1699657077::res://.godot/exported/133200997/export-24e079109d807ba890afd8426deb6b18-instructionsScreen.scn
+res://Scenes/label_theme.tres::7804f61c0b94494ae5c44f877d0c128b::1690310470::res://.godot/exported/133200997/export-e99dd65e0170403321f4ee4b1bb6b69d-label_theme.res
+res://Scenes/large_pellet.tscn::8f62d635ae80bdcf178d1631739bbddd::1699657077::res://.godot/exported/133200997/export-59707de27d87d1f985d4f782aaebad89-large_pellet.scn
+res://Scenes/main.tscn::e41ae435b4fe87b9e2a3dc8c4c6010da::1699657077::res://.godot/exported/133200997/export-2ddd04d543d5858e7f20c9299a8b5096-main.scn
+res://Scenes/MainMenu.tscn::c718bb215a01c6e64233a4de80559b8f::1699657077::res://.godot/exported/133200997/export-5d46f2c25b5b7595677274e5845c73b8-MainMenu.scn
+res://Scenes/pacman.tscn::78e90420a10bf5bc7aae419f097d69fb::1699657077::res://.godot/exported/133200997/export-34af81d4373f13ca73cb7c5f36121543-pacman.scn
+res://Scenes/pellet.tscn::64b52c850a5fc77191b7c5e720cff6e5::1699657077::res://.godot/exported/133200997/export-121f165b1ac0b7a9f10ce21475f81d7a-pellet.scn
+res://Scenes/ui.tscn::936215e09d10fd9d208dc7147968351c::1699657077::res://.godot/exported/133200997/export-bc7c2c8286022576ab0a03a61017540b-ui.scn

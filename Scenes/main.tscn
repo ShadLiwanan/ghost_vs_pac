@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://dcc8nhlkih151"]
+[gd_scene load_steps=48 format=3 uid="uid://dcc8nhlkih151"]
 
 [ext_resource type="Texture2D" uid="uid://di7lt8ehvdxdh" path="res://Assets/Walls/wall_atlas.png" id="1_q0r65"]
 [ext_resource type="Script" path="res://Scenes/tilemap.gd" id="2_nc6io"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" path="res://Scenes/Ghosts.gd" id="9_nuocg"]
 [ext_resource type="PackedScene" uid="uid://dvdk0mgxvvvnv" path="res://Scenes/ghost_player.tscn" id="10_in0no"]
 [ext_resource type="Resource" uid="uid://bslqsl4u1p646" path="res://Resources/yellow_movement_targets.tres" id="11_i1ssy"]
+[ext_resource type="Resource" uid="uid://dcxbddnlkarl" path="res://Resources/red_movement_targets.tres" id="11_mqmpa"]
 [ext_resource type="Script" path="res://Scenes/points_manager.gd" id="11_oco4g"]
 [ext_resource type="Resource" uid="uid://55kl0m2si7xr" path="res://Resources/pink_movement_targets.tres" id="12_i2s7u"]
 [ext_resource type="Texture2D" uid="uid://bwh3pnp6rcycn" path="res://Assets/Ghost/Ghost_Body_01.png" id="12_lfsce"]
@@ -408,8 +409,9 @@ pacman_death_sound_player = NodePath("../SoundPlayers/PacmanDeathSoundPlayer")
 pellets_manager = NodePath("../Pellets")
 ui = NodePath("../UI")
 
-[node name="Pellets" type="Node" parent="."]
+[node name="Pellets" type="Node" parent="." node_paths=PackedStringArray("ghost_array")]
 script = ExtResource("3_0j36a")
+ghost_array = [NodePath("../Ghosts/YellowGhost"), NodePath("../Ghosts/PinkGhost"), NodePath("../Ghosts/BlueGhost")]
 
 [node name="Pellet" parent="Pellets" instance=ExtResource("3_kgao6")]
 position = Vector2(-180, -1)
@@ -1628,6 +1630,7 @@ script = ExtResource("9_nuocg")
 
 [node name="RedGhost" parent="Ghosts" node_paths=PackedStringArray("tile_map", "chasing_target", "points_manager", "starting_position", "ghost_eaten_sound_player") instance=ExtResource("10_in0no")]
 scale = Vector2(2, 2)
+movement_targets = ExtResource("11_mqmpa")
 tile_map = NodePath("../../TileMap")
 color = Color(0.235294, 0.454902, 0.988235, 1)
 chasing_target = NodePath("../../Player")

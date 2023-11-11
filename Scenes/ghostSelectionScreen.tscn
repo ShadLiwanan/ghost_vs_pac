@@ -36,6 +36,9 @@ offset_bottom = 320.0
 theme_override_colors/font_color = Color(0.992157, 0.00784314, 0, 1)
 theme_override_fonts/font = ExtResource("1_6qfat")
 theme_override_font_sizes/font_size = 50
+disabled = true
+action_mode = 0
+button_mask = 0
 text = "Blinky The Shadow"
 alignment = 0
 
@@ -47,6 +50,9 @@ offset_bottom = 408.0
 theme_override_colors/font_color = Color(0.992157, 0.713726, 0.992157, 1)
 theme_override_fonts/font = ExtResource("1_6qfat")
 theme_override_font_sizes/font_size = 50
+disabled = true
+action_mode = 0
+button_mask = 0
 text = "Pinky the Speedy"
 alignment = 0
 
@@ -58,6 +64,9 @@ offset_bottom = 496.0
 theme_override_colors/font_color = Color(1, 0.709804, 0.329412, 1)
 theme_override_fonts/font = ExtResource("1_6qfat")
 theme_override_font_sizes/font_size = 50
+disabled = true
+action_mode = 0
+button_mask = 0
 text = "Clyde the Pokey"
 alignment = 0
 

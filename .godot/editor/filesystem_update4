@@ -1,6 +1,7 @@
 res://Scenes/main.tscn
 res://Resources/movement_targets.gd
 res://Resources/yellow_movement_targets.tres
+res://Resources/red_movement_targets.tres
 res://Resources/pink_movement_targets.tres
 res://Resources/blue_movement_targets.tres
 res://Scenes/pacman.tscn
@@ -14,4 +15,3 @@ res://Scenes/MainMenu.tscn
 res://Scenes/ghostsDescription.tscn
 res://Scenes/ghostSelectionScreen.tscn
 res://Scenes/instructionsScreen.tscn
-res://Scenes/ghostController.gd

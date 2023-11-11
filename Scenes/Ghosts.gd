@@ -8,7 +8,7 @@ func _ready():
 	
 
 func reset_ghosts(lifes):	
-	var ghosts = get_children() as Array[Ghost] as Array[GhostController]
+	var ghosts = get_children() as Array[Ghost]
 	if lifes == 0:
 		for ghost in ghosts:
 			ghost.scatter_timer.stop()
